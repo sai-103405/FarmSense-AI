@@ -1,0 +1,9 @@
+k.venv/
+__pycache__/
+*.pyc
+.git/
+.env
+.ipynb_checkpoints/
+.pytest_cache/
+data/vector_db/
+.DS_Store

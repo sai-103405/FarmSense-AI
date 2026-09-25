@@ -1,0 +1,76 @@
+FarmSense AI - Plant Disease Knowledge Guide
+
+TOMATO EARLY BLIGHT
+
+Symptoms:
+Tomato early blight commonly produces dark brown to black spots on older leaves.
+The spots may develop concentric ring patterns and can cause surrounding leaf tissue
+to turn yellow. As the disease progresses, leaves may fall from the plant.
+
+General management:
+- Remove and dispose of severely affected leaves.
+- Avoid unnecessary wetting of leaves during irrigation.
+- Provide adequate spacing between plants to improve air circulation.
+- Remove plant debris from around affected plants.
+- Monitor plants regularly for new symptoms.
+- Use locally approved disease-management products according to their label and
+  agricultural extension recommendations.
+
+Prevention:
+- Maintain good field sanitation.
+- Avoid prolonged leaf wetness where practical.
+- Rotate crops where appropriate.
+- Use healthy planting material.
+- Monitor plants regularly, especially during favorable disease conditions.
+
+
+TOMATO LATE BLIGHT
+
+Symptoms:
+Late blight can produce dark, water-soaked-looking lesions on leaves and stems.
+Under favorable conditions the disease can spread rapidly.
+
+General management:
+- Remove heavily affected plant material where appropriate.
+- Improve air circulation around plants.
+- Avoid prolonged leaf wetness.
+- Monitor plants frequently.
+- Follow local agricultural extension recommendations for disease management.
+
+Prevention:
+- Use healthy planting material.
+- Maintain good sanitation.
+- Monitor weather and crop conditions.
+- Avoid unnecessary overhead irrigation.
+
+
+APPLE SCAB
+
+Symptoms:
+Apple scab can cause olive-green to brown lesions on leaves and fruit.
+Severe infections may cause premature leaf drop and affect fruit quality.
+
+General management:
+- Remove fallen infected leaves and plant debris where practical.
+- Maintain good orchard sanitation.
+- Monitor trees regularly.
+- Follow locally approved disease-management recommendations.
+
+Prevention:
+- Maintain orchard hygiene.
+- Monitor trees during periods favorable to disease development.
+- Use resistant varieties when appropriate.
+
+
+GENERAL PLANT DISEASE GUIDANCE
+
+Image-based AI predictions should be treated as an aid rather than a definitive
+diagnosis. Similar symptoms can occur across different diseases, pests, nutrient
+problems, and environmental stresses.
+
+Farmers should consider crop variety, local weather, field conditions, disease
+history, and guidance from qualified agricultural professionals before taking
+management action.
+
+Always follow the label instructions and local regulations when using agricultural
+products.

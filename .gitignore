@@ -1,0 +1,48 @@
+# ==============================
+# Environment
+# ==============================
+.env
+.venv/
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+
+# ==============================
+# Training datasets
+# ==============================
+data/raw/
+data/processed/
+
+# ==============================
+# Generated vector database
+# ==============================
+data/vector_db/
+
+# ==============================
+# Generated model evaluation artifacts
+# ==============================
+models/cnn/plant_disease_confusion_matrix.png
+models/cnn/plant_disease_test_confusion_matrix.png
+models/cnn/gradcam_result.jpg
+
+# ==============================
+# Training / intermediate CNN models
+# ==============================
+models/cnn/plant_disease_cnn.pth
+models/cnn/plant_disease_resnet18.pth
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.log

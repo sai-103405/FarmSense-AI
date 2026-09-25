@@ -1,0 +1,17 @@
+streamlit
+fastapi
+uvicorn
+pydantic
+requests
+pandas
+numpy
+scikit-learn
+joblib
+torch
+torchvision
+Pillow
+sentence-transformers
+chromadb
+ollama
+python-multipart
+datasets
