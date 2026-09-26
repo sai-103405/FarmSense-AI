@@ -255,11 +255,12 @@ def run_agent(
             }
 
         # Run CNN prediction
-        disease, confidence, top_predictions = (
+        disease, confidence, top_predictions, quality_message = (
             predict_disease(image_path)
         )
 
         answer = (
+            f"{quality_message}\n\n"
             f"Detected disease: {disease}\n\n"
             f"Confidence: "
             f"{confidence * 100:.2f}%"

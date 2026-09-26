@@ -620,85 +620,89 @@ with tab2:
                     "🧠 ResNet18 is analyzing the leaf..."
                 ):
 
-                    disease, confidence, top_predictions = (
+                    disease, confidence, top_predictions, quality_message = (
                         predict_disease(
                             temporary_path
                         )
                     )
+                if quality_message != "Image quality is acceptable":
+                    st.warning(f"⚠️ {quality_message}")
 
-                result_col1, result_col2 = st.columns(2)
 
-                with result_col1:
+                if disease != "Invalid image quality":
+                    result_col1, result_col2 = st.columns(2)
 
-                    st.markdown(
-                        f"""
-                        <div class="result-card">
+                    with result_col1:
 
-                        <div class="result-title">
-                            🍃 Detected class
-                        </div>
+                        st.markdown(
+                            f"""
+                            <div class="result-card">
 
-                        <div class="result-value">
-                            {disease.replace("___", " — ").replace("_", " ").title()}
-                        </div>
+                            <div class="result-title">
+                                🍃 Detected class
+                            </div>
 
-                        </div>
-                        """,
-                        unsafe_allow_html=True
+                            <div class="result-value">
+                                {disease.replace("___", " — ").replace("_", " ").title()}
+                            </div>
+
+                            </div>
+                            """,
+                            unsafe_allow_html=True
+                        )
+
+                    with result_col2:
+
+                        st.markdown(
+                            f"""
+                            <div class="result-card">
+
+                            <div class="result-title">
+                                🎯 Confidence
+                            </div>
+
+                            <div class="result-value">
+                                {confidence * 100:.2f}%
+                            </div>
+
+                            </div>
+                            """,
+                            unsafe_allow_html=True
+                        )
+
+                    st.subheader("📊 Top Predictions")
+
+                    for prediction in top_predictions:
+
+                        probability = prediction["confidence"] * 100
+
+                        disease_name = (
+                            prediction["disease"]
+                            .replace("___", " — ")
+                            .replace("_", " ")
+                            .title()
+                        )
+
+                        st.write(
+                            f"**{disease_name}**"
+                        )
+
+                        st.progress(
+                            min(probability / 100, 1.0)
+                        )
+
+                        st.caption(
+                            f"{probability:.2f}% model confidence"
+                        )
+
+                    st.warning(
+                        """
+                        ⚠️ AI image predictions are not definitive
+                        diagnoses. For important agricultural decisions,
+                        confirm the condition with a qualified
+                        agricultural expert.
+                        """
                     )
-
-                with result_col2:
-
-                    st.markdown(
-                        f"""
-                        <div class="result-card">
-
-                        <div class="result-title">
-                            🎯 Confidence
-                        </div>
-
-                        <div class="result-value">
-                            {confidence * 100:.2f}%
-                        </div>
-
-                        </div>
-                        """,
-                        unsafe_allow_html=True
-                    )
-
-                st.subheader("📊 Top Predictions")
-
-                for prediction in top_predictions:
-
-                    probability = prediction["confidence"] * 100
-
-                    disease_name = (
-                        prediction["disease"]
-                        .replace("___", " — ")
-                        .replace("_", " ")
-                        .title()
-                    )
-
-                    st.write(
-                        f"**{disease_name}**"
-                    )
-
-                    st.progress(
-                        min(probability / 100, 1.0)
-                    )
-
-                    st.caption(
-                        f"{probability:.2f}% model confidence"
-                    )
-
-                st.warning(
-                    """
-                    ⚠️ AI image predictions are not definitive
-                    diagnoses. For important agricultural decisions,
-                    confirm the condition with a qualified
-                    agricultural expert.
-                    """
-                )
 
             except Exception as error:
 
